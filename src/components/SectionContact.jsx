@@ -25,7 +25,7 @@ export const SectionContact = () => {
 }
 
 const Contact = styled.div`
-background-image: url(/src/assets/contact_bg.png);
+background-image: url(./src/assets/contact_bg.png);
 background-color: #1e2326;
 color: #fff;
 padding: 50px 0;
