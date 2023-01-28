@@ -6,7 +6,7 @@ export const Header = () => {
     <SeccionInicio id="seccionInicio">
         <div className="contenido-banner">
             <div className="contenedor-img">
-                <img src="../src/assets/Yo.jpg" alt=""/>
+                <img src="/src/assets/Yo.jpg" alt=""/>
             </div>
             <h1>CARLOS ROSALES</h1>
             <h2>Web developer - JUNIOR</h2>
@@ -45,7 +45,7 @@ export const Header = () => {
 const SeccionInicio = styled.div`
 /* SECCION I N I C I O */
 background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-url(../src/assets/fondo.jpg);
+url(/src/assets/fondo.jpg);
 background-size: cover;
 height: 100vh;
 color: #fff;
