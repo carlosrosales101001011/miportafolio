@@ -6,7 +6,7 @@ export const SectionProyectos = () => {
   const data = [
     {id: 1, 
     "name": "CalendarApp - FrontEnd", 
-    "img": "../../public/assets/proyecto1.png",
+    "img": "/assets/proyecto1.png",
     "desc": "Un gran calendario que puedes crear, actualizar y eliminar fechas. Cuenta con un login y un register. Desplegado con Vercel", 
     "tec": "redux, react, Vitejs",
     "urlCode": "https://github.com/carlosrosales101001011/calendarapp",
