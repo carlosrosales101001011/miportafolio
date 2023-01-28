@@ -6,7 +6,7 @@ export const Header = () => {
     <SeccionInicio id="seccionInicio">
         <div className="contenido-banner">
             <div className="contenedor-img">
-                <img src={"/public/assets/Yo.jpg"} alt=""/>
+                <img src={"/../../public/assets/Yo.jpg"} alt=""/>
             </div>
             <h1>CARLOS ROSALES</h1>
             <h2>Web developer - JUNIOR</h2>
