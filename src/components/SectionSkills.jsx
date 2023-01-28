@@ -4,24 +4,24 @@ import { SvgsIcons } from './SvgsIcons'
 
 export const SectionSkills = () => {
     const data = [
-        {"id": 1, "name": "Html", "ico": "./src/svg/HtmlIco.svg", "width": "50px"},
-        {"id": 2, "name": "Css", "ico": "./src/svg/CssIco.svg", "width": "50px"},
-        {"id": 3, "name": "Sass", "ico": "./src/svg/SassIco.svg", "width": "50px"},
-        {"id": 4, "name": "Javascript", "ico": "./src/svg/JavascriptIco.svg", "width": "50px"},
-        {"id": 5, "name": "D3.js -", "ico": "./src/svg/d3Ico.svg", "width": "50px"},
-        {"id": 6, "name": "React", "ico": "./src/svg/ReactIco.svg", "width": "50px"},
-        {"id": 7, "name": "Redux", "ico": "./src/svg/ReduxIco.svg", "width": "50px"},
-        {"id": 8, "name": "Vite", "ico": "./src/svg/VitejsIco.svg", "width": "50px"},
+        {"id": 1, "name": "Html", "ico": "/src/svg/HtmlIco.svg", "width": "50px"},
+        {"id": 2, "name": "Css", "ico": "/src/svg/CssIco.svg", "width": "50px"},
+        {"id": 3, "name": "Sass", "ico": "/src/svg/SassIco.svg", "width": "50px"},
+        {"id": 4, "name": "Javascript", "ico": "/src/svg/JavascriptIco.svg", "width": "50px"},
+        {"id": 5, "name": "D3.js -", "ico": "/src/svg/d3Ico.svg", "width": "50px"},
+        {"id": 6, "name": "React", "ico": "/src/svg/ReactIco.svg", "width": "50px"},
+        {"id": 7, "name": "Redux", "ico": "/src/svg/ReduxIco.svg", "width": "50px"},
+        {"id": 8, "name": "Vite", "ico": "/src/svg/VitejsIco.svg", "width": "50px"},
         
-        {"id": 9, "name": "C#", "ico": "./src/svg/CcharpIco.svg", "width": "50px"},
-        {"id": 10, "name": ".Net -", "ico": "./src/svg/netIco.svg", "width": "50px"},
-        {"id": 11, "name": "Java", "ico": "./src/svg/JavaIco.svg", "width": "50px"},
-        {"id": 12, "name": "Node.js", "ico": "./src/svg/NodeJSIco.svg", "width": "50px"},
-        {"id": 13, "name": "Spring -", "ico": "./src/svg/SpringIco.svg", "width": "50px"},
+        {"id": 9, "name": "C#", "ico": "/src/svg/CcharpIco.svg", "width": "50px"},
+        {"id": 10, "name": ".Net -", "ico": "/src/svg/netIco.svg", "width": "50px"},
+        {"id": 11, "name": "Java", "ico": "/src/svg/JavaIco.svg", "width": "50px"},
+        {"id": 12, "name": "Node.js", "ico": "/src/svg/NodeJSIco.svg", "width": "50px"},
+        {"id": 13, "name": "Spring -", "ico": "/src/svg/SpringIco.svg", "width": "50px"},
 
-        {"id": 15, "name": "Mysql", "ico": "./src/svg/MysqlIco.svg", "width": "50px"},
-        {"id": 16, "name": "Sql server", "ico": "./src/svg/SqlServerIco.svg", "width": "50px"},
-        {"id": 17, "name": "MongoDB", "ico": "./src/svg/MongodbIco.svg", "width": "30px"},
+        {"id": 15, "name": "Mysql", "ico": "/src/svg/MysqlIco.svg", "width": "50px"},
+        {"id": 16, "name": "Sql server", "ico": "/src/svg/SqlServerIco.svg", "width": "50px"},
+        {"id": 17, "name": "MongoDB", "ico": "/src/svg/MongodbIco.svg", "width": "30px"},
     ]
   return (
     // <!-- SECCION SKILLS -->
