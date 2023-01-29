@@ -33,18 +33,16 @@ padding: 50px 0;
     max-width: 1100px;
     margin: auto;
 }
-h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
 .fila{
     display: flex;
     justify-content: center;
 }
 .col{
-    width: 50%;
+    width: 90%;
+    
+    @media (min-width: 670px){
+        width: 70%;
+    }
     padding: 10px;
     position: relative;
 }

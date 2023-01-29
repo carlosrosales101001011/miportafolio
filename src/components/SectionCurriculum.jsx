@@ -71,25 +71,27 @@ padding: 50px 20px;
     max-width: 1100px;
     margin: auto;
 }
-h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
-}
 .fila{
     display: flex;
     justify-content: space-between;
+    @media (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    }
 }
 .fila .col{
     width: 49%;
+    
+    @media (max-width: 750px){
+        width: 100%;
+    }
     padding: 0 20px;
 }
 .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    word-break: break-word;
 }
 .fila .izquierda{
     border-right: 2px solid #252A2E;
@@ -106,17 +108,20 @@ h2{
 .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
+    word-break: break-word;
 }
 .fila .item .casa{
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
+    word-break: break-word;
 }
 .fila .item .fecha{
     display: block;
     color: #1CB698;
     margin-bottom: 10px;
+    word-break: break-word;
 }
 .fila .item p{
     line-height: 24px;

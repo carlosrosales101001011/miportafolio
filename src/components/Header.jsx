@@ -71,10 +71,12 @@ align-items: center;
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
+    word-break: break-word;
 }
 .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
+    word-break: break-word;
 }
 
 

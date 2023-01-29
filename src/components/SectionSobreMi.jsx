@@ -72,16 +72,11 @@ const SobreMi = styled.div`
     max-width: 1100px;
     margin: auto;
   }
-  h2 {
-    font-size: 48px;
-    font-family: "Righteous";
-    text-align: center;
-    padding: 20px 0;
-  }
   .contenido-seccion p {
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    word-break: break-word;
   }
   .contenido-seccion p span {
     color: #1cb698;
@@ -92,7 +87,11 @@ const SobreMi = styled.div`
     justify-content: center;
   }
   .fila .col {
-    width: 50%;
+    width: 90%;
+    
+    @media (min-width: 670px){
+        width: 70%;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,12 +100,14 @@ const SobreMi = styled.div`
     font-size: 28px;
     font-family: "Righteous";
     margin-bottom: 25px;
+    word-break: break-word;
   }
   .fila .col ul {
     list-style: none;
   }
   .fila .col ul li {
     margin: 12px 0;
+    word-break: break-word;
   }
   .fila .col ul li strong {
     display: inline-block;
@@ -156,6 +157,11 @@ const SobreMi = styled.div`
     z-index: 10;
     display: flex;
     flex-direction: row;
+    @media (max-width: 260px){
+      padding: 10px 1px;
+      display: flex;
+      flex-direction: column;
+    }
     align-items: center;
     .iconDowload {
       fill: white;

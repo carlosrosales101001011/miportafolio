@@ -11,8 +11,8 @@ import { SectionContact } from './components/SectionContact'
 function App() {
   return (
     <>
-      <NavBar/>
-      <Header/>
+      {/* <NavBar/> */}
+      {/* <Header/> */}
       <SectionSobreMi/>
       <SectionSkills/>
       <SectionCurriculum/>

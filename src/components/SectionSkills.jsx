@@ -47,7 +47,7 @@ export const SectionSkills = () => {
 }
 const Skills = styled.div`
 .box{
-    border: 1px solid white;
+    // border: 1px solid white;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -55,7 +55,7 @@ const Skills = styled.div`
     margin: 20px;
     padding: 10px;
     p{
-        font-size: 1vw;
+        font-size: 20px;
         margin-top: 20px;
     }
 }
@@ -67,19 +67,22 @@ padding: 50px 20px;
     max-width: 1100px;
     margin: auto;
 }
-h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
-}
 .fila{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    
+    @media (max-width: 370px){
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
 }
 .fila .col{
     width: 50%;
+    
+    @media (min-width: 470px){
+        width: 90%;
+    }
     padding: 0 20px;
 }
 .fila .col h3{
