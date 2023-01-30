@@ -1,21 +1,25 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import styled from 'styled-components'
+import { ButtonCom } from './ButtonCom'
+import { SvgsIcons } from './SvgsIcons'
 
 export const SectionContact = () => {
+    const {DarkMode} = useSelector(e=>e.ui)
+
   return (
-    <Contact id='seccionContact'>
+    <Contact DarkModep={DarkMode} id='seccionContact'>
         
         <div className="contenido-seccion">
             <h2>CONTACTO</h2>
             <div className="fila">
                 {/* <!-- Formulario --> */}
                 <div className="col">
+                    <form action='https://formsubmit.co/carlosrosales21092002@hotmail.com' method='POST'>
                     <input type="text" placeholder="Dirección de correo"/>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
-                        <span className="overlay"></span>
-                    </button>
+                    <ButtonCom onSubmitForEmail='submit' textoButton={"Enviar Mensaje"} icon={<SvgsIcons paperPlane className={"iconPaperPlane"}/>}/>
+                    </form>
                 </div>
             </div>
         </div>
@@ -26,8 +30,8 @@ export const SectionContact = () => {
 
 const Contact = styled.div`
 background-image: url(/assets/contact_bg.png);
-background-color: #1e2326;
-color: #fff;
+background-color: ${prop=>{return prop.DarkModep? '#1e2326': '#eaeaea'}};
+color: ${prop=>{return prop.DarkModep? '#fff': 'black'}};
 padding: 50px 0;
 .contenido-seccion{
     max-width: 1100px;
@@ -39,7 +43,10 @@ padding: 50px 0;
 }
 .col{
     width: 90%;
-    
+    .iconPaperPlane{
+        fill: ${prop=>{return prop.DarkModep? '#0000': '#fff0'}};
+        stroke: ${prop=>{return prop.DarkModep? '#fff': '#000'}};
+    }
     @media (min-width: 670px){
         width: 70%;
     }
@@ -55,32 +62,6 @@ padding: 50px 0;
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
-}
-button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1CB698;
-    z-index: -1;
-    transition: 1s;
-}
-button:hover .overlay{
-    width: 100%;
 }
 .col img{
     width: 100%;

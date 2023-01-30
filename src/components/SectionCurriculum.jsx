@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux"
 import styled from "styled-components"
 
 export const SectionCurriculum = () => {
@@ -8,6 +9,7 @@ export const SectionCurriculum = () => {
     const dataDer =[
         {id: 1, "Area": "Ninguna por el momento", "CompanyName": "", "fecha": "", "desc": ""}
     ]
+    const {DarkMode} = useSelector(e=>e.ui)
 
 
 
@@ -15,7 +17,7 @@ export const SectionCurriculum = () => {
   return (
     
     // <!-- SECCION CURRICULUM -->
-    <Curriculum id="seccionCurriculum">
+    <Curriculum DarkModep={DarkMode} id="seccionCurriculum">
         <div className="contenido-seccion">
             <h2>Curriculum</h2>
             <div className="fila">
@@ -63,9 +65,8 @@ export const SectionCurriculum = () => {
 
 const Curriculum = styled.div`
 /* SECCION CURRICULUM */
-
-background-color: #1e2326;
-color: #fff;
+background-color: ${prop=>{return prop.DarkModep? '#1e2326': '#eaeaea'}};
+color: ${prop=>{return prop.DarkModep? '#fff': 'black'}};
 padding: 50px 20px;
 .contenido-seccion{
     max-width: 1100px;
@@ -104,6 +105,7 @@ padding: 50px 20px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
+    color: ${prop=>{return prop.DarkModep? '#fff': '#fff'}};
 }
 .fila .item h4{
     font-size: 20px;

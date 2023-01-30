@@ -1,8 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { SvgsIcons } from './SvgsIcons'
 
 export const SectionSkills = () => {
+    const {DarkMode} = useSelector(e=>e.ui)
+
     const data = [
         {"id": 1, "name": "Html", "ico": "/svg/HtmlIco.svg", "width": "50px"},
         {"id": 2, "name": "Css", "ico": "/svg/CssIco.svg", "width": "50px"},
@@ -19,13 +22,13 @@ export const SectionSkills = () => {
         {"id": 12, "name": "Node.js", "ico": "/svg/NodeJSIco.svg", "width": "50px"},
         {"id": 13, "name": "Spring -", "ico": "/svg/SpringIco.svg", "width": "50px"},
 
-        {"id": 15, "name": "Mysql", "ico": "/svg/MysqlIco.svg", "width": "50px"},
+        {"id": 15, "name": "Mysql", "ico": "/svg/MySqlIco.svg", "width": "50px"},
         {"id": 16, "name": "Sql server", "ico": "/svg/SqlServerIco.svg", "width": "50px"},
         {"id": 17, "name": "MongoDB", "ico": "/svg/MongodbIco.svg", "width": "30px"},
     ]
   return (
     // <!-- SECCION SKILLS -->
-    <Skills id="seccionSkills">
+    <Skills DarkModep={DarkMode} id="seccionSkills">
         <div className="contenido-seccion">
             <h2>Skills</h2>
             <div className="fila">
@@ -60,8 +63,8 @@ const Skills = styled.div`
     }
 }
 /* SECCION S K I L L S */
-background-color: #252A2E;
-color: #fff;
+background-color: ${prop=>{return prop.DarkModep? '#252A2E': '#d6d6d6'}};
+color: ${prop=>{return prop.DarkModep? '#fff': 'black'}};
 padding: 50px 20px;
 .contenido-seccion{
     max-width: 1100px;

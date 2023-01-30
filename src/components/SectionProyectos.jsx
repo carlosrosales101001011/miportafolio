@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { BoxProyect } from './BoxProyect'
 
@@ -18,37 +19,16 @@ export const SectionProyectos = () => {
         "tecBackend": "Nodejs, mongodb, mongoose, express",
         "urlCodeBackend": "https://github.com/carlosrosales101001011/calendarapp-backend"
       }
-  },
-  {id: 2, 
-    "name": "CalendarApp - FrontEnd", 
-    "img": "/assets/proyecto1.png",
-    "desc": "Un gran calendario que puedes crear, actualizar y eliminar fechas. Cuenta con un login y un register. Desplegado con Vercel", 
-    "tec": "redux, react, Vitejs",
-    "urlCode": "https://github.com/carlosrosales101001011/calendarapp",
-    "urlView": "https://www.rmck-calendarapp.online"
-  },
-  {id: 3, 
-    "name": "CalendarApp - FrontEnd", 
-    "img": "/assets/proyecto1.png",
-    "desc": "Un gran calendario que puedes crear, actualizar y eliminar fechas. Cuenta con un login y un register. Desplegado con Vercel", 
-    "tec": "redux, react, Vitejs",
-    "urlCode": "https://github.com/carlosrosales101001011/calendarapp",
-    "urlView": "https://www.rmck-calendarapp.online",
-    "existBackend": 
-      {"nameBackend": "CalendarApp - Backend", 
-        "descBackend": "Backend de calendarapp, login, register y un crud. Desplegado con railway",
-        "tecBackend": "Nodejs, mongodb, mongoose, express",
-        "urlCodeBackend": "https://github.com/carlosrosales101001011/calendarapp-backend"
-      }
   }
 
     
   ]
 
+  const {DarkMode} = useSelector(e=>e.ui)
 
 
   return (
-    <Proyectos id='sectionProyectos'>
+    <Proyectos DarkModep={DarkMode} id='sectionProyectos'>
       <div className="contenido-seccion">
             <h2>PROYECTOS INDEPENDIENTES</h2>
             <div className="galeria">
@@ -67,18 +47,20 @@ export const SectionProyectos = () => {
 }
 const Proyectos = styled.div`
 
-  background-color: #252A2E;
+  background-color: ${prop=>{return prop.DarkModep? '#252A2E': '#D6D6D6'}};
   color: #fff;
   padding: 50px 20px;
-.contenido-seccion{
-  max-width: 1100px;
+.contenido-seccion{    
+  max-width: 1000px;
   margin: auto;
+  
 }
 h2{
   font-size: 48px;
   font-family: 'Righteous';
   text-align: center;
   padding: 20px 0;
+  color: ${prop=>{return prop.DarkModep? '#fff': 'black'}};
 }
 .galeria{
   display: flex;

@@ -1,4 +1,6 @@
+import { useSelector } from "react-redux";
 import styled from "styled-components";
+import { ButtonCom } from "./ButtonCom";
 import { SvgsIcons } from "./SvgsIcons";
 
 export const SectionSobreMi = () => {
@@ -10,12 +12,13 @@ export const SectionSobreMi = () => {
         link.download = "document.pdf";
         link.click();
     }
+    const {DarkMode} = useSelector(e=>e.ui)
 
 
 
   return (
     // <!-- SECCION SOBRE MI -->
-    <SobreMi id="seccionSobremi">
+    <SobreMi DarkModep={DarkMode} id="seccionSobremi">
       <div className="contenido-seccion">
         <h2>Sobre Mí</h2>
         <p>
@@ -54,26 +57,22 @@ export const SectionSobreMi = () => {
             </ul>
           </div>
         </div>
-        <button onClick={downloadDocument}>
-          Descargar CV
-          <SvgsIcons className={"iconDowload"} download />
-          <span className="overlay"></span>
-        </button>
+        <ButtonCom textoButton={"Descargar Curriculum"} icon={<SvgsIcons className={"iconDowload"} download/>}/>
       </div>
     </SobreMi>
   );
 };
 const SobreMi = styled.div`
   /*SOBRE MI*/
-  background-color: #1e2326;
-  color: #fff;
+  background: ${prop=>{return prop.DarkModep? '#1e2326': '#eaeaea'}};
+  color: ${prop=>{return prop.DarkModep? '#fff': 'black'}};
   padding: 50px 20px;
   .contenido-seccion {
     max-width: 1100px;
     margin: auto;
   }
   .contenido-seccion p {
-    font: 18px;
+    font-size: 15px;
     line-height: 22px;
     margin-bottom: 20px;
     word-break: break-word;
@@ -143,42 +142,12 @@ const SobreMi = styled.div`
     font-size: 30px;
     margin-bottom: 10px;
   }
-  button {
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    @media (max-width: 260px){
-      padding: 10px 1px;
-      display: flex;
-      flex-direction: column;
-    }
-    align-items: center;
     .iconDowload {
-      fill: white;
+      fill: ${prop=>{return prop.DarkModep? '#fff': 'black'}};
       margin-left: 10px;
     }
-  }
-  button .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1cb698;
-    z-index: -1;
-    transition: 1s;
-  }
-  button:hover .overlay {
-    width: 100%;
-  }
+  // }
+  // button:hover .overlay {
+  //   width: 100%;
+  // }
 `;

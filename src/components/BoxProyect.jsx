@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 
 export const BoxProyect = ({
@@ -11,8 +12,9 @@ export const BoxProyect = ({
   urlView,
   existBackend,
 }) => {
+  const {DarkMode} = useSelector(e=>e.ui)
   return (
-    <Box trasImg={img}>
+    <Box DarkModeP={DarkMode} trasImg={img}>
         <img src={img} />
         <div className="proyectDetails">
             <h3>{name}</h3>
@@ -51,6 +53,11 @@ const Box = styled.div`
 //   justify-content: center;
 //   margin: 20px 10px;
 
+${prop=>{return prop.DarkModeP? '': `
+-webkit-box-shadow: 0px 5px 11px -3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 5px 11px -3px rgba(0,0,0,0.85);
+box-shadow: 0px 5px 11px -3px rgba(0,0,0,0.85);
+`}}
 
   .proyectDetails{
     position: absolute;
@@ -71,6 +78,9 @@ const Box = styled.div`
   }
     position: relative;
     max-width: 470px;
+    @media (max-width: 1038px){
+    max-width: 620px;
+    }
     height: fit-content;
     margin: 10px;
     cursor: pointer;

@@ -48,6 +48,10 @@ background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
 url(/assets/fondo.jpg);
 background-size: cover;
 height: 100vh;
+@media (max-width: 750px) {
+  background-image: none;
+  background: linear-gradient(180deg, rgb(73 71 71) 22%, rgb(33 38 41) 78%);
+}
 color: #fff;
 display: flex;
 align-items: center;
@@ -66,6 +70,7 @@ align-items: center;
     width: 80%;
     margin: auto;
     border-radius: 100%;
+    // filter: blu
 }
 .contenido-banner h1{
     margin-top: 40px;
@@ -89,7 +94,8 @@ align-items: center;
   ul{
     display: flex;
     justify-content: center;
-    width: 100%;
+    max-width: 353px;
+    flex-wrap: wrap;
     li{
       margin-right: 10px;
       margin-top: 10px;

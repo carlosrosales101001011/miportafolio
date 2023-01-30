@@ -1,4 +1,4 @@
-export const SvgsIcons = ({className, download, github, gmail, email, linkeding, phone}) => {
+export const SvgsIcons = ({ClickSvg, className, arrow, menu, paperPlane, sun, moon, download, github, gmail, email, linkeding, phone}) => {
 
     return (
       <>
@@ -34,6 +34,75 @@ export const SvgsIcons = ({className, download, github, gmail, email, linkeding,
           (
             <svg className={className} width="30" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11.5 8h1v7.826l2.5-3.076.753.665-3.753 4.585-3.737-4.559.737-.677 2.5 3.064v-7.828zm7 12h-13c-2.481 0-4.5-2.019-4.5-4.5 0-2.178 1.555-4.038 3.698-4.424l.779-.14.043-.79c.185-3.447 3.031-6.146 6.48-6.146 3.449 0 6.295 2.699 6.479 6.146l.043.79.78.14c2.142.386 3.698 2.246 3.698 4.424 0 2.481-2.019 4.5-4.5 4.5m.979-9.908c-.212-3.951-3.473-7.092-7.479-7.092s-7.267 3.141-7.479 7.092c-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408"/></svg>
           )
+          }
+          {moon &&
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                className={`icon icon-tabler icon-tabler-moon ${className}`}
+                viewBox="0 0 24 24" 
+                strokeWidth="1.5" 
+                fill="none"
+                strokeLinecap="round" 
+                strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+          </svg>
+          }
+          {sun &&
+            (
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  className={`icon icon-tabler icon-tabler-sun ${className}`}
+                  viewBox="0 0 24 24" 
+                  strokeWidth="1.5" 
+                  fill="none" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="4" />
+                <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+              </svg>
+            )
+          }
+          {paperPlane &&
+          (
+            <svg 
+            className= {className}
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+            viewBox="0 0 24 24">
+              <path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 
+              15.362-7.68-3.974 14.57-3.75-3.339-2.17 
+              2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/>
+              </svg>
+          )
+          }
+          {menu &&
+            (
+              <svg
+                onClick={ClickSvg}
+              xmlns="http://www.w3.org/2000/svg" 
+                  className={`icon icon-tabler icon-tabler-menu-2 ${className}`} 
+                  width="44" height="44" viewBox="0 0 24 24" 
+                  strokeWidth="1.5" stroke="#2c3e50" fill="none" 
+                  strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+            )
+          }
+          {arrow &&
+            <svg
+            onClick={ClickSvg} clipRule="evenodd" fillRule="evenodd" 
+            className={className}
+            strokeLinejoin="round" strokeMiterlimit="2" 
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m16.843 13.789c.108.141.157.3.157.456 0 
+              .389-.306.755-.749.755h-8.501c-.445 0-.75-.367-.75-.755 
+              0-.157.05-.316.159-.457 1.203-1.554 3.252-4.199 
+              4.258-5.498.142-.184.36-.29.592-.29.23 0 
+              .449.107.591.291zm-7.564-.289h5.446l-2.718-3.522z" 
+              fillRule="nonzero"/>
+              </svg>
           }
       </>
     )
