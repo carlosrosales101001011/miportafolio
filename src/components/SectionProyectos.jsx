@@ -19,6 +19,19 @@ export const SectionProyectos = () => {
         "tecBackend": "Nodejs, mongodb, mongoose, express",
         "urlCodeBackend": "https://github.com/carlosrosales101001011/calendarapp-backend"
       }
+  },
+  {id: 2, 
+    "name": "Sistema de ventas - FrontEnd", 
+    "img": "/assets/proyecto2.png",
+    "desc": "Un sistema de ventas donde podras visualizar las categorias y marcas de los productos, y con un panel administrativo", 
+    "tec": "bootstrap, jquery/ajax",
+    "urlCode": "https://github.com/carlosrosales101001011/Sistema-web",
+    "existBackend": 
+      {"nameBackend": "Sistema de ventas - Backend", 
+        "descBackend": "Backend de Sistema de ventas, login, register y mas de 5 cruds.",
+        "tecBackend": "Asp.net MVC 5",
+        "urlCodeBackend": "https://github.com/carlosrosales101001011/Sistema-web"
+      }
   }
 
     

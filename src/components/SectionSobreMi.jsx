@@ -8,8 +8,9 @@ export const SectionSobreMi = () => {
     function downloadDocument() {
         var link = document.createElement("a");
         //ACA VA MI CURRICULUM
-        link.href = "path/to/document.pdf";
-        link.download = "document.pdf";
+        const path = 'curriculumVITAE.pdf'
+        link.href = `/path/to/${path}`;
+        link.download = `${path}`;
         link.click();
     }
     const {DarkMode} = useSelector(e=>e.ui)
@@ -57,7 +58,7 @@ export const SectionSobreMi = () => {
             </ul>
           </div>
         </div>
-        <ButtonCom textoButton={"Descargar Curriculum"} icon={<SvgsIcons className={"iconDowload"} download/>}/>
+        <ButtonCom  onClick={downloadDocument} textoButton={"Descargar Curriculum"} icon={<SvgsIcons className={"iconDowload"} download/>}/>
       </div>
     </SobreMi>
   );

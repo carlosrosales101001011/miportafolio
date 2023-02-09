@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { SvgsIcons } from './SvgsIcons'
 
-export const ButtonCom = ({onSubmitForEmail, textoButton, icon}) => {
+export const ButtonCom = ({onClick, onSubmitForEmail, textoButton, icon}) => {
   const {DarkMode} = useSelector(e=>e.ui)
 
   return (
-    <ButtonStyle type={onSubmitForEmail} DarkModep={DarkMode}>
+    <ButtonStyle onClick={onClick} type={onSubmitForEmail} DarkModep={DarkMode}>
         {textoButton} {icon}
         <span className="overlay"></span>
     </ButtonStyle>

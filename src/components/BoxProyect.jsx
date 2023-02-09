@@ -24,9 +24,14 @@ export const BoxProyect = ({
             <a className={"txtCodigo"} target={"_blank"} href={urlCode}>
                 Codigo
             </a>
-            <a className={"txtVisualizacion"} target={"_blank"} href={urlView}>
-                Visualizar
-            </a>
+            {urlView &&(
+              <a className={"txtVisualizacion"} target={"_blank"} href={urlView}>
+                  Visualizar
+              </a>
+
+            )
+
+            }
             </span>
             {existBackend && (
             <span>

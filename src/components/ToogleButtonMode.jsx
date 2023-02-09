@@ -68,7 +68,7 @@ cursor: pointer;
     transform: translateY(-50%);
     width: 25px;
     height: 25px;
-    stroke: ${prop=>{return prop.DarkModeP? 'white': 'black'}};
+    stroke: ${prop=>{return prop.DarkModeP? 'white': 'white'}};
 }
 .ball{
     display: inline-block;
