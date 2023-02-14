@@ -24,12 +24,12 @@ export const SectionProyectos = () => {
     "name": "Sistema de ventas - FrontEnd", 
     "img": "/assets/proyecto2.png",
     "desc": "Un sistema de ventas donde podras visualizar las categorias y marcas de los productos, y con un panel administrativo", 
-    "tec": "bootstrap, jquery/ajax",
-    "urlCode": "https://github.com/carlosrosales101001011/Sistema-web",
+    "tec": "bootstrap, jquery/ajax, Razor",
+    "urlCode": "https://github.com/carlosrosales101001011/Sistema-web/tree/master/CapaPresentacionAdmin/Views",
     "existBackend": 
       {"nameBackend": "Sistema de ventas - Backend", 
         "descBackend": "Backend de Sistema de ventas, login, register y mas de 5 cruds.",
-        "tecBackend": "Asp.net MVC 5",
+        "tecBackend": "Asp.net MVC 5, Razor",
         "urlCodeBackend": "https://github.com/carlosrosales101001011/Sistema-web"
       }
   }

@@ -8,9 +8,8 @@ export const SectionSobreMi = () => {
     function downloadDocument() {
         var link = document.createElement("a");
         //ACA VA MI CURRICULUM
-        const path = 'curriculumVITAE.pdf'
-        link.href = `/path/to/${path}`;
-        link.download = `${path}`;
+        link.href = `https://drive.google.com/drive/folders/10J9XjmlHZDY9mibCqkLMls9JXrwQoUmM?usp=share_link`;
+        link.target = "_blank";
         link.click();
     }
     const {DarkMode} = useSelector(e=>e.ui)
@@ -58,7 +57,7 @@ export const SectionSobreMi = () => {
             </ul>
           </div>
         </div>
-        <ButtonCom  onClick={downloadDocument} textoButton={"Descargar Curriculum"} icon={<SvgsIcons className={"iconDowload"} download/>}/>
+        <ButtonCom  onClick={downloadDocument} textoButton={"Ver Curriculum"} icon={<SvgsIcons className={"iconDowload"} download/>}/>
       </div>
     </SobreMi>
   );

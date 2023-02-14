@@ -30,7 +30,7 @@ export const SectionSkills = () => {
     // <!-- SECCION SKILLS -->
     <Skills DarkModep={DarkMode} id="seccionSkills">
         <div className="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Mis conocimientos</h2>
             <div className="fila">
                 {data.map(e=>{
                     return(
