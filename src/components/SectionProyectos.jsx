@@ -32,6 +32,20 @@ export const SectionProyectos = () => {
         "tecBackend": "Asp.net MVC 5, Razor",
         "urlCodeBackend": "https://github.com/carlosrosales101001011/Sistema-web"
       }
+  },
+  {id: 3, 
+    "name": "Sistema de contactos - FrontEnd", 
+    "img": "/assets/proyecto3.png",
+    "desc": "Un sistema de contactos basico. Puede registrar, editar y eliminar", 
+    "tec": "bootstrap, Razor",
+    "urlCode": "https://github.com/carlosrosales101001011/Sistema-web-de-contacto--basico/tree/master/Proyecto%20Crud/Views",
+    "urlView": "https://www.contact-app.somee.com/",
+    "existBackend": 
+      {"nameBackend": "Sistema de contactos - Backend", 
+        "descBackend": "Backend de Sistema de contactos, 1 crud.",
+        "tecBackend": "Asp.net, Razor, sql server",
+        "urlCodeBackend": "https://github.com/carlosrosales101001011/Sistema-web-de-contacto--basico"
+      }
   }
 
     

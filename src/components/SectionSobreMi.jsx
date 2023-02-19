@@ -23,12 +23,9 @@ export const SectionSobreMi = () => {
         <h2>Sobre Mí</h2>
         <p>
           <span>Hola, soy Carlos Rosales.</span>
-          Estudiante trabajador en busca de empleo. preparado para utilizar mis
-          habilidades y pasión para impulsar la misión de una compañía.
-          Aporto una actitud positiva y la voluntad y
-          motivación para aprender nuevos programas.
+          Tengo mas de 2 años de experiencia desarrollando proyectos en react, Nodejs
+          Actualmente, tengo 1 año de experiencia en el desarrollo de sistemas webs con Asp.net MVC
         </p>
-
         <div className="fila">
           {/* <!-- datos personales --> */}
           <div className="col">
