@@ -46,6 +46,20 @@ export const SectionProyectos = () => {
         "tecBackend": "Asp.net, Razor, sql server",
         "urlCodeBackend": "https://github.com/carlosrosales101001011/Sistema-web-de-contacto--basico"
       }
+  },
+  {id: 4, 
+    "name": "TODO List tareas - FrontEnd", 
+    "img": "/assets/proyecto4.png",
+    "desc": "Un TODOLIST de tareas, 1 crud, subido en SmarterASP.NET", 
+    "tec": "bootstrap, Reactjs",
+    "urlCode": "https://github.com/carlosrosales101001011/todoList/tree/master/listadoTarea/ClientApp",
+    "urlView": "http://carlosrosales-001-site1.etempurl.com/",
+    "existBackend": 
+      {"nameBackend": "TODO List tareas - Backend", 
+        "descBackend": "Backend de TODO LIST, 1 crud.",
+        "tecBackend": "Asp.net core, Entity framework core, nodejs",
+        "urlCodeBackend": "https://github.com/carlosrosales101001011/todoList"
+      }
   }
 
     
