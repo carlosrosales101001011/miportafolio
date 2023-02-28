@@ -25,7 +25,7 @@ export const SectionSkills = () => {
         {"id": 16, "name": "Sql server", "ico": "/svg/SqlServerIco.svg", "width": "50px"},
         {"id": 17, "name": "MongoDB", "ico": "/svg/MongodbIco.svg", "width": "30px"},
 
-        {"id":18, "name": "Typescript", "ico": "/svg/TyscriptIco.svg", "width": "50px"}
+        {"id":18, "name": "Typescript", "ico": "/svg/TypescriptIco.svg", "width": "50px"}
     ]
   return (
     // <!-- SECCION SKILLS -->
