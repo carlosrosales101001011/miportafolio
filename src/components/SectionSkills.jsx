@@ -20,11 +20,12 @@ export const SectionSkills = () => {
         {"id": 10, "name": ".Net -", "ico": "/svg/netIco.svg", "width": "50px"},
         {"id": 11, "name": "Java", "ico": "/svg/JavaIco.svg", "width": "50px"},
         {"id": 12, "name": "Node.js", "ico": "/svg/NodeJSIco.svg", "width": "50px"},
-        {"id": 13, "name": "Spring -", "ico": "/svg/SpringIco.svg", "width": "50px"},
 
         {"id": 15, "name": "Mysql", "ico": "/svg/MySqlIco.svg", "width": "50px"},
         {"id": 16, "name": "Sql server", "ico": "/svg/SqlServerIco.svg", "width": "50px"},
         {"id": 17, "name": "MongoDB", "ico": "/svg/MongodbIco.svg", "width": "30px"},
+
+        {"id":18, "name": "Typescript", "ico": "/svg/TyscriptIco.svg", "width": "50px"}
     ]
   return (
     // <!-- SECCION SKILLS -->
